@@ -1,5 +1,3 @@
-let person;
-
 function getValueAtObject(obj, key) {
   if (obj.getValueAtObject(key)) {
     return obj[key];
@@ -7,6 +5,11 @@ function getValueAtObject(obj, key) {
     return 'error: 존재하지 않는 값입니다. 다시 입력해주세요.';
   }
 }
+let person = {
+  name: 'hunzoo',
+  age: 30,
+  city: 'masan',
+};
 
 console.log(getValueAtObject(person, 'name'));
 console.log(getValueAtObject(person, 'age'));
